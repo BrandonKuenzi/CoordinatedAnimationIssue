@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="TestCoordinated.SecondPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestCoordinated"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="LightGray">
+
+    <Grid>
+        <Grid x:Name="Header" Background="Blue" Width="400" Height="200" HorizontalAlignment="Left" VerticalAlignment="Top"></Grid>
+        <TextBlock x:Name="CoordinatedText1" FontSize="25" Margin="20,200" Foreground="Black">This text should move with the button during animation</TextBlock>
+        <TextBlock x:Name="CoordinatedText2" FontSize="20" Margin="20,300" Foreground="Black">This should do the same</TextBlock>
+        <Button x:Name="BackButton" Click="BackButton_Click" Background="Gray" Width="200" Height="100" Margin="100" VerticalAlignment="Top" HorizontalAlignment="Right">Back</Button>
+
+    </Grid>
+</Page>
